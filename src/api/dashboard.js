@@ -1,4 +1,4 @@
-const API_URL = "https://localhost:7155/api/schooladmin/dashboard";
+const API_URL = "https://sms-api-e10j.onrender.com/api/schooladmin/dashboard";
 
 export const fetchDashboard = async () => {
   const token = localStorage.getItem("token");

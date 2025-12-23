@@ -1,4 +1,4 @@
-const API = "https://localhost:7155/api/schooladmin/attendance";
+const API = "https://sms-api-e10j.onrender.com/api/schooladmin/attendance";
 
 const headers = () => ({
   "Content-Type": "application/json",
