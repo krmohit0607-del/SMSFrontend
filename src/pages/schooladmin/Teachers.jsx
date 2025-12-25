@@ -165,7 +165,7 @@ t.status === "Active"
 : "bg-red-100 text-red-700"
 }`}
 >
-{t.isactive}
+{t.isActive}
 </span>
 </td>
 <td className="space-x-3">
