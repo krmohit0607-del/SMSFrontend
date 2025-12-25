@@ -23,20 +23,20 @@ const Students = () => {
 
       <table className="w-full bg-white shadow rounded-xl">
         <thead className="bg-gray-100">
-          <tr>
-            <th className="p-3">Name</th>
-            <th>Roll</th>
-            <th>Class</th>
-            <th>Action</th>
-          </tr>
+           <tr>
+    <th className="p-3 text-left">Name</th>
+    <th className="p-3 text-left">Roll</th>
+    <th className="p-3 text-left">Class</th>
+    <th className="p-3 text-left">Action</th>
+  </tr>
         </thead>
         <tbody>
           {students.map(s => (
             <tr key={s.id} className="border-b">
               <td className="p-3">{s.fullName}</td>
-              <td>{s.rollNumber}</td>
-              <td>{s.class.name} {s.class.section}</td>
-              <td>
+              <td  className="p-3">{s.rollNumber}</td>
+              <td  className="p-3">{s.class.name} {s.class.section}</td>
+              <td  className="p-3">
                 <button
                   onClick={() =>
                     fetch(`https://sikshakendra-api.azurewebsites.net/api/schooladmin/students/${s.id}`, {
