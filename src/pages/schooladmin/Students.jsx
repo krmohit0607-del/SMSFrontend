@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 
 const Students = () => {
   const [students, setStudents] = useState([]);
-
+const [classSortOrder, setClassSortOrder] = useState("asc"); // asc | desc
   const load = async () => {
     const res = await fetch("https://sikshakendra-api.azurewebsites.net/api/schooladmin/students", {
       headers: {
@@ -12,6 +12,17 @@ const Students = () => {
     });
     setStudents(await res.json());
   };
+const toggleClassSort = () => {
+  setClassSortOrder(prev => (prev === "asc" ? "desc" : "asc"));
+};
+const sortedStudents = [...students].sort((a, b) => {
+  const classA = `${a.class.name} ${a.class.section}`;
+  const classB = `${b.class.name} ${b.class.section}`;
+
+  if (classA < classB) return classSortOrder === "asc" ? -1 : 1;
+  if (classA > classB) return classSortOrder === "asc" ? 1 : -1;
+  return 0;
+});
 
   useEffect(() => {
     load();
@@ -26,12 +37,12 @@ const Students = () => {
            <tr>
     <th className="p-3 text-left">Name</th>
     <th className="p-3 text-left">Roll</th>
-    <th className="p-3 text-left">Class</th>
+    <th className="p-3 text-left cursor-pointer select-none" onClick={toggleClassSort}>Class {classSortOrder === "asc" ? "▲" : "▼"}</th>
     <th className="p-3 text-left">Action</th>
   </tr>
         </thead>
         <tbody>
-          {students.map(s => (
+          {sortedStudents.map(s => (
             <tr key={s.id} className="border-b">
               <td className="p-3">{s.fullName}</td>
               <td  className="p-3">{s.rollNumber}</td>
