@@ -1,4 +1,4 @@
-const API_URL = "https://sikshakendra-api.azurewebsites.net/schooladmin/dashboard";
+const API_URL = "https://sikshakendra-api.azurewebsites.net/api/schooladmin/dashboard";
 
 export const fetchDashboard = async () => {
   const token = localStorage.getItem("token");

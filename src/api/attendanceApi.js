@@ -1,4 +1,4 @@
-const API = "https://sikshakendra-api.azurewebsites.net/schooladmin/attendance";
+const API = "https://sikshakendra-api.azurewebsites.net/api/schooladmin/attendance";
 
 const headers = () => ({
   "Content-Type": "application/json",
