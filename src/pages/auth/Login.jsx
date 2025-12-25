@@ -42,11 +42,8 @@ const handleLogin = async (e) => {
 
 
 return (
-<div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-700">
-{/* <div className="min-h-screen flex items-center justify-center 
-bg-gradient-to-br from-sky-100 via-blue-100 to-cyan-100"> */}
-
-<div className="bg-white rounded-2xl shadow-xl w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+<div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-sky-100 via-blue-100 to-cyan-100">
+  <div className="bg-white rounded-2xl shadow-xl w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
 
 
 {/* Left Section */}
@@ -113,6 +110,7 @@ Login
 </div>
 </div>
 );
+
 };
 
 

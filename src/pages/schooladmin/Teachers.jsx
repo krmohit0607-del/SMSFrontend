@@ -37,8 +37,8 @@ useEffect(() => {
 const handleSaveTeacher = async () => {
   try {
     const url = editingTeacher
-    ? `https://localhost:7155/api/schooladmin/teachers/${editingTeacher.id}`
-    : "https://localhost:7155/api/schooladmin/teachers";
+    ? `https://sikshakendra-api.azurewebsites.net/api/schooladmin/teachers/${editingTeacher.id}`
+    : "https://sikshakendra-api.azurewebsites.net/api/schooladmin/teachers";
 
   const method = editingTeacher ? "PUT" : "POST";
 
@@ -77,7 +77,7 @@ const handleSaveTeacher = async () => {
 
 const fetchTeachers = async () => {
   const response = await fetch(
-    "https://localhost:7155/api/schooladmin/teachers",
+    "https://sikshakendra-api.azurewebsites.net/api/schooladmin/teachers",
     {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -97,7 +97,7 @@ const handleDeleteTeacher = async (id) => {
   if (!window.confirm("Are you sure?")) return;
 
   await fetch(
-    `https://localhost:7155/api/schooladmin/teachers/${id}`,
+    `https://sikshakendra-api.azurewebsites.net/api/schooladmin/teachers/${id}`,
     {
       method: "DELETE",
       headers: {
