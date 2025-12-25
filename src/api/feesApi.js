@@ -1,4 +1,4 @@
-const API_URL = "https://sms-api-e10j.onrender.com/api/schooladmin/fees";
+const API_URL = "https://sikshakendra-api.azurewebsites.net/schooladmin/fees";
 
 const authHeader = () => ({
   "Content-Type": "application/json",

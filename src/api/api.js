@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://sms-api-e10j.onrender.com/api",
+  baseURL: "https://sikshakendra-api.azurewebsites.net/api",
 });
 
 api.interceptors.request.use((config) => {
