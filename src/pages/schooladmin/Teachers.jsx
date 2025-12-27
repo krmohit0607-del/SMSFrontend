@@ -153,6 +153,7 @@ className="mb-4 px-4 py-2 border rounded-lg w-full md:w-1/3"
 </thead>
 <tbody>
 {filteredTeachers.map((t) => (
+  console.log(t);
 <tr key={t.id} className="border-b last:border-none">
 <td className="p-3">{t.fullName}</td>
 <td>{t.Teacher.subject}</td>
