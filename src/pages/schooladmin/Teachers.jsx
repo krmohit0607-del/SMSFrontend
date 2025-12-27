@@ -20,7 +20,7 @@ useEffect(() => {
     if (editingTeacher) {
         setFullName(editingTeacher.fullName);
         setEmail(editingTeacher.email);
-        setSubject(editingTeacher.subject);
+        setSubject(editingTeacher.teacher.subject);
         setPassword(editingTeacher.password);
   } else {
         setFullName("");
