@@ -19,6 +19,8 @@ const handleLogin = async (e) => {
     // Save token
     localStorage.setItem("token", res.token);
     localStorage.setItem("role", res.role);
+     localStorage.setItem("name", res.name);
+
 
     // Redirect based on role
     switch (res.role) {

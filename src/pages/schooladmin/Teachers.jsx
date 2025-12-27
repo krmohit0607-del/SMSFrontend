@@ -91,7 +91,6 @@ const fetchTeachers = async () => {
   }
 
   const data = await response.json();
-  console.log(data);
   setTeachers(data);
 };
 const handleDeleteTeacher = async (id) => {
