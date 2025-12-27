@@ -156,7 +156,7 @@ className="mb-4 px-4 py-2 border rounded-lg w-full md:w-1/3"
 {filteredTeachers.map((t) => (
 <tr key={t.id} className="border-b last:border-none">
 <td className="p-3">{t.fullName}</td>
-<td>{t.Teacher.subject}</td>
+<td>{t.teacher.subject}</td>
 <td>{t.email}</td>
 <td>
 <span
