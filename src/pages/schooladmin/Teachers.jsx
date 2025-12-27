@@ -145,7 +145,7 @@ className="mb-4 px-4 py-2 border rounded-lg w-full md:w-1/3"
 <thead className="bg-gray-100 text-left">
 <tr>
 <th className="p-3">Name</th>
-{/* <th>Subject</th> */}
+<th>Subject</th>
 <th>Email</th>
 <th>Status</th>
 <th>Actions</th>
@@ -155,7 +155,7 @@ className="mb-4 px-4 py-2 border rounded-lg w-full md:w-1/3"
 {filteredTeachers.map((t) => (
 <tr key={t.id} className="border-b last:border-none">
 <td className="p-3">{t.fullName}</td>
-{/* <td>{t.subject}</td> */}
+<td>{t.Teacher.subject}</td>
 <td>{t.email}</td>
 <td>
 <span
