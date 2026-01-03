@@ -52,18 +52,18 @@ const Classes = () => {
           <thead className="bg-gray-100">
             <tr>
               <th className="p-3">Class</th>
-              <th>Section</th>
-              <th>Subjects</th>
-              <th>Action</th>
+              <th className="p-3">Section</th>
+              <th className="p-3">Subjects</th>
+              <th className="p-3">Action</th>
             </tr>
           </thead>
           <tbody>
             {classes.map((c) => (
               <tr key={c.id} className="border-b">
                 <td className="p-3">{c.name}</td>
-                <td>{c.section}</td>
-                <td>{c.subjects.length}</td>
-                <td>
+                <td className="p-3">{c.section}</td>
+                <td className="p-3">{c.subjects.length}</td>
+                <td className="p-3">
                   <button
                     onClick={() => deleteClass(c.id).then(load)}
                     className="text-red-600"

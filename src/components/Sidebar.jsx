@@ -14,14 +14,14 @@ schooladmin: [
 { name: "Students", path: "/schooladmin/students" },
 { name: "Attendance", path: "/schooladmin/attendance" },
 { name: "Classes", path: "/schooladmin/classes" },
-{ name: "Timetable", path: "/schooladmin/timetable" },
+// { name: "Timetable", path: "/schooladmin/timetable" },
 { name: "Fees", path: "/schooladmin/fees" },
 ],
 teacher: [
 { name: "Dashboard", path: "/teacher" },
 { name: "Attendance", path: "/teacher/attendance" },
-{ name: "Assignments", path: "/teacher/assignments" },
-{ name: "Marks", path: "/teacher/marks" },
+// { name: "Assignments", path: "/teacher/assignments" },
+// { name: "Marks", path: "/teacher/marks" },
 ],
 parent: [
 { name: "Dashboard", path: "/parent" },
